@@ -26,19 +26,33 @@ fetch(newUrl).then((response) => {
         let suma_opadu = data.suma_opadu;
         let cisnienie = data.cisnienie;
         const info = 
-        `<h3>Uzyskane dane miasta ${name}:</h2>
-        <h4>Pomiar z dnia: ${data_pomiaru} 
-        <br/>Temperatura: ${temperatura} ℃
-        <br/>suma opadu: ${suma_opadu}
-        <br/>cisnienie: ${cisnienie}</h4>
+        `
+        <h3>Uzyskane dane miasta ${name}:</h2>
+        <p>${data_pomiaru} </p>
+        <p><img src="assets/temperatura.svg" alt="Temperatura"/>Temperatura: ${temperatura} ℃</p>
+        <p><img src="assets/opady.svg" alt="opady"/>Suma opadu: ${suma_opadu} l/m<sup>2</sup></p>
+        <p><img src="assets/cisnienie.svg" alt="cisnienie"/>Ciśnienie: ${cisnienie} hPa</p>
         `;
-        //console.log(newUrl)
         document.getElementById('info').innerHTML = info;
-        //document.body.style.backgroundImage = `url('assets/${clearedName}.jpg')`;
-        document.body.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('assets/${clearedName}.jpg')`;
-        //document.getElementById('bgim').style.backgroundImage = `linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('assets/${clearedName}.jpg')`;
+        document.body.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('assets/${clearedName}.jpg')`;
+        
     })
     .catch(function(error){
         console.log(error);
 })
+}
+
+let style = "white";
+
+function changeStyle(){
+    if(style === "white"){
+        style = "black";
+        document.getElementsByClassName('container')[0].style.backgroundColor =  "rgba(0, 0, 0, 0.7)";
+        document.body.style.color = "rgb(255, 255, 255)";
+    }
+    else{
+        style = "white";
+        document.getElementsByClassName('container')[0].style.backgroundColor =  "rgba(255, 255, 255, 1)";
+        document.body.style.color = "rgb(0, 0, 0)";
+    }
 }

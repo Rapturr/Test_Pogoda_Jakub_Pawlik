@@ -7,21 +7,26 @@
         <title>Onwelo</title>
     </head>
     <body>
+        <div class="container">
             <div class="formViewStyle">
                 <form>
                     <label for="city">Wybierz miasto:</label>
-                <select id="city" name="city" required>
-                    <option></option>
-                    <option>Kielce</option>
-                    <option>Kraków</option>
-                    <option>Lublin</option>
-                </select>
-                <input type="submit" value="Wyszukaj"/>
-            </form>
+                    <select id="city" name="city" required>
+                        <option></option>
+                        <option>Kielce</option>
+                        <option>Kraków</option>
+                        <option>Lublin</option>
+                    </select>
+                    <input type="submit" value="Wyszukaj"/>
+                </form>
+            </div>
+            <div class="info" id="info"></div>
         </div>
         
-        <div class="info" id="info"></div>
-        
+        <div class="footer">
+            <button type="button" onclick="changeStyle()"> Zmień styl </button>
+            <p>Jakub Pawlik, Zadanie dla Onwelo</p>
+        </div>
         <script src = "script.js"></script> 
     </body>
 </html>
