@@ -3,6 +3,71 @@
     align-items: center;
     text-align: center;
 }
-h1 {
- color: aqua;
+
+body {
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh; 
+    background-color: #f1f1f1;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+select {
+    width: 140px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: rgb(207, 224, 230);
+    color: rgb(0, 0, 0);
+    padding: 4px;
+    border-radius: 9px;
+    text-align: center;
+}
+
+select, option {
+ font-family: cursive;
+}
+
+input {
+    width: 140px;
+    height: 25px;
+    border-radius: 15px;
+    border-width: 1px;
+    background-color: rgb(207, 224, 230);
+    box-shadow:#000000, 9px;
+}
+input:hover {
+    width: 140px;
+    height: 25px;
+    border-radius: 15px;
+    border-width: 1px;
+    background-color: rgb(166, 214, 231);
+    box-shadow:#000000, 9px;
+}
+
+.info{
+    background-color: rgb(201, 236, 208);
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 2dv;
+    width: 60%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
 }
