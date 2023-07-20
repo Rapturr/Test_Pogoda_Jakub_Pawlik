@@ -63,7 +63,7 @@ function changeStyle(){
     }
     else{
         style = "white";
-        document.getElementsByClassName('container')[0].style.backgroundColor =  "rgba(255, 255, 255, 1)";
+        document.getElementsByClassName('container')[0].style.backgroundColor =  "rgba(254, 249, 232, 1)";
         document.body.style.color = "rgb(0, 0, 0)";
     }
 }
